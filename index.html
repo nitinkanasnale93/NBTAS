@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NBTAS – Namma Bangalore Traffic Awareness System</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Namma Bangalore Traffic Awareness System</h1>
+            <h3><i>Plan Smarter. Avoid Bangalore Traffic</i></h3>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div>
+
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Check Traffic Status</h3>
+
+                <label for="location">Enter Location:</label>
+                <select id="location">
+                    <option value="">-- Select Location --</option>
+                    <option value="MG Road">MG Road</option>
+                    <option value="Brigade Road">Brigade Road</option>
+                    <option value="Koramangala">Koramangala</option>
+                    <option value="Indiranagar">Indiranagar</option>
+                    <option value="Whitefield">Whitefield</option>
+                </select>
+
+                <label for="time">Enter Time:</label>
+                <select id="time">
+                    <option value="">-- Select Time --</option>
+                    <option value="Morning">Morning (8 AM - 11 AM)</option>
+                    <option value="Afternoon">Afternoon (12 PM - 3 PM)</option>
+                    <option value="Evening">Evening (4 PM - 7 PM)</option>
+                    <option value="Night">Night (8 PM - 11 PM)</option>
+                </select>
+
+                <button id="checkStatusBtn">Check Status</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Traffic Result</h3>
+
+                <div class="map-container">
+                    <iframe
+                        id="mapFrame"
+                        src=""
+                        width="100%"
+                        height="250"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <p id="trafficResult">Select location and time to see traffic status.</p>
+                <p id="trafficStatus"></p>
+                <p id="suggestion"></p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Smart Travel Tips</h3>
+
+                <!-- ✅ EMPTY container for JavaScript -->
+                <ul id="travelTips"></ul>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p>Mini Project – HTML, CSS & JavaScript</p>
+            <p>Smart City Traffic Awareness System</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
